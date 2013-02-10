@@ -1,0 +1,89 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+#header {
+	width: 900px;
+	color: #FFFFFF;
+	border: 1px solid #000000;
+	background-color: #4D5054;
+	padding: 10px;
+}
+#navigation {
+	width: 900px;
+	color: #FFFFFF;
+	border: 1px solid #000000;
+	background-color: #AACCAA;
+	padding: 10px;
+}
+#navigation ul {
+	list-style-type: none;
+}
+#navigation li {
+	display: inline;
+}
+#navigation a {
+	display: inline-block;
+	padding: 1px 5px;
+	background-color: green;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#navigation a:hover {
+	background-color: orange;
+}
+#leftcolumn {
+	color: #333333;
+	position: relative;
+	border: 1px solid #CCCCCC;
+	margin: 0px;
+	padding: 10px;
+	min-height: 350px;
+	width: 900px;
+	float: left;
+	background-color: #EDEBDA;
+}
+#floatbox {
+	float: right;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: #333333;
+	border: 2px solid #CCCCCC;
+	margin: 0px;
+	padding: 10px;
+	min-height: 150px;
+	width: 200px;
+	display: inline;
+	background-color: #DDDDDD;
+ }
+ #footer {
+	width: 900px;
+	clear: both;
+	color: #FFFFFF;
+	border: 1px solid #000000;
+	background-color: #4D5054;
+	margin-top: 10px;
+	padding: 10px;
+}
+
+table {
+	width: 100%;
+	border: 1px solid #000000;
+	padding: 5px;
+	background-color: #F5F5F5;
+	text-align: left;
+}
+
+th, td {
+	padding: 1px 5px;
+}

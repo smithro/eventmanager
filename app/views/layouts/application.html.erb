@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eventmanager</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="wrapper">
+  <div id="header">
+    Hi There!
+  </div>
+  <div id="navigation">
+    <%= link_to 'Exhibitor Categories', exhibitor_categories_path %>
+	<%= link_to 'Exhibitors', exhibitors_path %>
+	<%= link_to 'Sponsors', sponsors_path %>
+	<%= link_to 'Meetings', meetings_path %>
+	<%= link_to 'Venues', venues_path %>
+  </div>
+  <div id="leftcolumn">
+<%= yield %>
+  </div>
+  <div id="footer">
+    Copywrite 2013 Event Manager
+  </div>
+</div>
+</body>
+</html>
